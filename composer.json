@@ -1,0 +1,36 @@
+{
+    "name": "diagro/laravel_base",
+    "description": "Library for apps written in Laravel with Diagro spieces.",
+    "type": "library",
+    "version": "1.0.0",
+    "license": "Beerware",
+    "authors": [
+        {
+            "name": "Stijn Leenknegt",
+            "email": "stijn@diagro.be"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework":"^9.0|^10.0",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Laravel\\Diagro\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laravel\\Diagro\\DiagroServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
